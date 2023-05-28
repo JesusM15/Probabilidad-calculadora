@@ -1,0 +1,111 @@
+/* Configuraciones iniciales */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: none;
+    font-size: 24px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #fff;
+    overflow: hidden;
+}
+
+.section{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .30),rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.90)), url("../images/dados.jpg");    
+    background-size: cover;
+    max-height: 100vh;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.subtitle{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form{
+    background: #27272b;
+    margin: auto;
+    min-height: 100px;
+    width: 80%;
+    height: auto;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+.input{
+    background: #dadada;
+    outline: none;
+}
+
+.btn-send{
+    font-size: 0.8rem;
+    color: #fff;
+    background: #FF0000;
+    transition: all 0.4s;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    min-height: 30px;
+    width: 100%;
+}
+
+.second-container{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction:column;
+}
+
+/* Seccion principal o index */
+
+.selection-container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.link{
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    background: #ff0000cc;
+    height: 40px;
+    width: 25%;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 10px;
+    transition: all 0.4s;
+}
+
+.link:hover{
+    margin-top: -4px;
+    border: 4px inset #ff7c7c;
+    background: #000;
+    color: #ff7c7c;
+}
+
+@media screen and (max-width: 700px) {
+    .grid-container{
+        display: block;
+    }
+    *{
+        font-size: 20px;
+    }
+}
