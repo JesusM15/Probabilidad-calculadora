@@ -1,1 +1,1 @@
-"# Probabilidad-calculadora" 
+Proyecto para Probabilidad y Estadistica
